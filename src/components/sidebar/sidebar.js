@@ -36,17 +36,29 @@ const Sidebar = () => {
       </ul>
       <ul className="social-media">
         <li>
-          <a rel="noopener noreferrer" href="http://linkedin.com">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/billy-walker-ab0013278/"
+          >
             Linkedin
           </a>
         </li>
         <li>
-          <a rel="noopener noreferrer" href="http://bsky.social">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://bsky.app/profile/billywalker.bsky.social"
+          >
             Bluesky
           </a>
         </li>
         <li>
-          <a rel="noopener noreferrer" href="http://instagram.com">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/Korjubzot/"
+          >
             Github
           </a>
         </li>
