@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
-import Hero from "./components/sidebar/hero/hero";
-import Contact from "./components/sidebar/contact/contact";
+import Hero from "./components/hero/hero";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
