@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Alert } from "@mui/material";
 import emailjs from "emailjs-com";
 import "./contact.css";
 
@@ -8,6 +9,8 @@ function Contact() {
     subject: "",
     detail: "",
   });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   function handleChange(e) {
     setContact({
@@ -28,9 +31,10 @@ function Contact() {
       .then(
         (response) => {
           console.log("SUCCESS", response.status, response.text);
+          setIsSubmitted(true);
         },
         (err) => {
-          console.log("failed", err);
+          console.log("FAILED", err);
         }
       );
     e.target.reset();
@@ -41,7 +45,6 @@ function Contact() {
       <form className="contact-form" onSubmit={handleSubmit}>
         <h2>Looking for me?</h2>
         <p>Leave your details and a message, and I'll right back to you</p>
-
         <input
           className="contact-email"
           type="email"
@@ -71,6 +74,9 @@ function Contact() {
           onChange={handleChange}
         ></input>
         <button type="submit">Submit</button>
+        {isSubmitted ? (
+          <Alert severity="success">Contact made. Don't wait up.</Alert>
+        ) : null}
       </form>
     </div>
   );
