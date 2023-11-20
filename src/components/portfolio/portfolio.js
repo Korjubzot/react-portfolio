@@ -22,9 +22,23 @@ function Portfolio() {
         my passion for building seamless online experiences. Live sites and
         GitHub repos available.
       </Typography>
-      <Cards></Cards>
-      <Cards></Cards>
-      <Cards></Cards>
+      <div className="cards-container">
+        <Cards
+          title="Weather Forecast"
+          description="Placeholder"
+          link="https://www.google.com"
+        ></Cards>
+        <Cards
+          title="DLicious Recipe Database"
+          description="Placeholder"
+          link="https://www.google.com"
+        ></Cards>
+        <Cards
+          title="Something Else"
+          description="Placeholder"
+          link="https://www.google.com"
+        ></Cards>
+      </div>
     </div>
   );
 }

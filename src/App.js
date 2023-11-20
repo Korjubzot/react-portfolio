@@ -4,6 +4,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import Hero from "./components/hero/hero";
 import Contact from "./components/contact/contact";
 import Portfolio from "./components/portfolio/portfolio";
+import Blog from "./components/blog/blog";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" exact element={<Hero />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
     </Router>
