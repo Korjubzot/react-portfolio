@@ -3,6 +3,7 @@ import "./App.css";
 import Sidebar from "./components/sidebar/sidebar";
 import Hero from "./components/hero/hero";
 import Contact from "./components/contact/contact";
+import Portfolio from "./components/portfolio/portfolio";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Hero />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </Router>
