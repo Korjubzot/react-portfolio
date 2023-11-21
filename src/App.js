@@ -5,6 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
 import WorkIcon from "@mui/icons-material/Work";
 import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import Hero from "./components/hero/hero";
 import Contact from "./components/contact/contact";
@@ -12,6 +13,7 @@ import Portfolio from "./components/portfolio/portfolio";
 import Blog from "./components/blog/blog";
 
 import "./App.css";
+import { LinkedIn } from "@mui/icons-material";
 
 function App() {
   const [isHomeHovered, setHomeHovered] = useState(false);
@@ -78,9 +80,47 @@ function App() {
               onMouseLeave={() => setBlogHovered(false)}
               component={<Link to="/blog" />}
             >
-              <div style={{ width: "100px", textAlign: "center " }}>
+              <div style={{ width: "100px", textAlign: "center" }}>
                 {" "}
                 {isBlogHovered ? "Blog" : <DynamicFeedIcon />}
+              </div>
+            </MenuItem>
+
+            <MenuItem>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              >
+                <a
+                  href="https://www.github.com/Korjubzot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "black" }}
+                >
+                  <GitHubIcon />
+                </a>
+              </div>
+            </MenuItem>
+
+            <MenuItem>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              >
+                <a
+                  href="https://www.linkedin.com/in/billy-walker-ab0013278/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "black", alignItems: "center" }}
+                >
+                  <LinkedIn />
+                </a>
               </div>
             </MenuItem>
           </Menu>
