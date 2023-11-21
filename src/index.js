@@ -8,12 +8,15 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import { ProSidebarProvider } from "react-pro-sidebar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ProSidebarProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </ProSidebarProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
