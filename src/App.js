@@ -139,13 +139,12 @@ function App() {
             className="sb-button"
             style={{
               zIndex: 3,
-              width: "75px",
               textAlign: "center",
               fontSize: "16px",
               position: "fixed",
               top: 0,
               left: 0,
-              margin: 5,
+              margin: 10,
               backgroundColor: "blue",
               color: "white",
             }}

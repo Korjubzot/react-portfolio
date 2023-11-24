@@ -26,10 +26,10 @@ function Hero() {
       />
       <div className="hero-button-container">
         <Link to="/portfolio">
-          <button>Portfolio</button>
+          <button className="hero-button">Portfolio</button>
         </Link>
         <Link to="/contact">
-          <button>Contact</button>
+          <button className="hero-button">Contact</button>
         </Link>
       </div>
     </div>

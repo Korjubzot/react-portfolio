@@ -28,7 +28,7 @@ img {
   max-height: 400px;
 }
 
-button {
+.hero-button {
   cursor: pointer;
   outline: 0;
   color: #fff;
@@ -47,7 +47,7 @@ button {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-button:hover {
+.hero-button:hover {
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
