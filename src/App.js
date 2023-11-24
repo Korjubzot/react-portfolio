@@ -23,7 +23,7 @@ function App() {
   const [isPortfolioHovered, setPortfolioHovered] = useState(false);
   const [isBlogHovered, setBlogHovered] = useState(false);
 
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   return (
     <Router>
@@ -32,24 +32,25 @@ function App() {
           <Sidebar
             style={{ display: "flex", height: "100%", minHeight: "400px" }}
             collapsed={collapsed}
+            collapsedWidth="0px"
           >
             <Menu
-            // icon="square"
-            // style={{
-            //   position: "fixed",
-            //   top: 0,
-            //   bottom: 0,
-            //   left: 0,
-            //   minHeight: "100vh",
-            //   backgroundColor: "#85a86c",
-            //   width: 175,
-            //   overflow: "hidden",
-            //   background: "#13395e",
-            //   display: "flex",
-            //   flexDirection: "column",
-            //   alignItems: "center",
-            //   justifyContent: "center",
-            // }}
+              icon="square"
+              style={{
+                position: "relative",
+                top: 0,
+                bottom: 0,
+                left: 0,
+                minHeight: "100vh",
+                backgroundColor: "#85a86c",
+                width: 100,
+                overflow: "hidden",
+                background: "#13395e",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <MenuItem
                 onMouseEnter={() => setHomeHovered(true)}
@@ -100,7 +101,7 @@ function App() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    width: "100%",
+                    width: "105px",
                   }}
                 >
                   <a
@@ -119,7 +120,7 @@ function App() {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    width: "100%",
+                    width: "100px",
                   }}
                 >
                   <a
@@ -137,17 +138,20 @@ function App() {
           <button
             className="sb-button"
             style={{
-              zIndex: 2,
-              color: "black", // text color
-              backgroundColor: "white", // background color
-              width: "100px", // width
-              height: "30px", // height
-              fontSize: "16px", // font size
-              position: "relative", // position
+              zIndex: 3,
+              width: "75px",
+              textAlign: "center",
+              fontSize: "16px",
+              position: "fixed",
+              top: 0,
+              left: 0,
+              margin: 5,
+              backgroundColor: "blue",
+              color: "white",
             }}
             onClick={() => setCollapsed(!collapsed)}
           >
-            {collapsed ? "Expand" : "Collapse"}
+            <MenuOutlinedIcon />
           </button>
         </div>
 
