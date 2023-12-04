@@ -1,7 +1,8 @@
 import React from "react";
 import Cards from "../cards/cards";
 import { Typography } from "@mui/material";
-
+// todo fix the mobile layout of this page
+// stack vertically?
 import "./portfolio.css";
 
 function Portfolio() {
