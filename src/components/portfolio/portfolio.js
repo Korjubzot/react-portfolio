@@ -40,9 +40,10 @@ function Portfolio() {
           github="https://github.com/Korjubzot/DLicious-Recipe-App"
         ></Cards>
         <Cards
-          title="Something Else"
-          description="Placeholder"
-          link="https://www.google.com"
+          title="Bluesky Bot"
+          description="Node.js based bot that automatically posts images to the Bluesky social media platform via API."
+          link="https://github.com/Korjubzot/bluesky-bot"
+          github="https://github.com/Korjubzot/bluesky-bot"
         ></Cards>
       </div>
     </div>

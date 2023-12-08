@@ -29,28 +29,32 @@ function Cards({ title, description, link, liveSite, github }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button
-            variant="outlined"
-            disableElevation
-            component="a"
-            href={liveSite}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={buttonStyles}
-          >
-            Live Site
-          </Button>
-          <Button
-            variant="outlined"
-            disableElevation
-            component="a"
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={buttonStyles}
-          >
-            GitHub
-          </Button>
+          {liveSite && (
+            <Button
+              variant="outlined"
+              disableElevation
+              component="a"
+              href={liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={buttonStyles}
+            >
+              Live Site
+            </Button>
+          )}
+          {github && (
+            <Button
+              variant="outlined"
+              disableElevation
+              component="a"
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={buttonStyles}
+            >
+              GitHub
+            </Button>
+          )}
         </CardActions>
       </CardActionArea>
     </Card>

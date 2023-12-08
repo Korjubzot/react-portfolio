@@ -27,6 +27,7 @@ function Hero() {
         <Box
           sx={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             width: "40%",
@@ -40,6 +41,12 @@ function Hero() {
             what's possible in the digital realm. Every line of code is a step
             towards building something amazing, and that's what keeps me excited
             every day.
+          </Typography>
+          <br></br>
+          <Typography variant="body1">
+            My skillset includes technologies like React, Node.js, JavaScript,
+            Firebase, PostgreSQL and more. I focus on the frontend, but I'm more
+            than capable of picking up backend where required.
           </Typography>
         </Box>
         <Box
