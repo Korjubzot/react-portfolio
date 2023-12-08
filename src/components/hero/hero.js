@@ -34,7 +34,7 @@ function Hero() {
             height: "80%",
           }}
         >
-          <Typography variant="body1">
+          <Typography paragraph={true} variant="body1">
             I'm Billy, a passionate software engineer who thrives on the
             challenges and creativity of web development. I'm constantly
             exploring new technologies and tools, pushing the boundaries of
@@ -43,10 +43,12 @@ function Hero() {
             every day.
           </Typography>
           <br></br>
-          <Typography variant="body1">
+          <Typography paragraph={true} variant="body1">
             My skillset includes technologies like React, Node.js, JavaScript,
             Firebase, PostgreSQL and more. I focus on the frontend, but I'm more
-            than capable of picking up backend where required.
+            than capable of picking up backend where required. When I'm not
+            working hard, I'm training for marathons, hiking, or studying
+            Polish.
           </Typography>
         </Box>
         <Box

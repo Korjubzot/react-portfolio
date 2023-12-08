@@ -5,6 +5,32 @@ import { Typography } from "@mui/material";
 // stack vertically?
 import "./portfolio.css";
 
+const cardData = [
+  {
+    title: "Weather Forecast",
+    description:
+      "React-based weather forecaster that pulls and displays data from an API.",
+    link: "https://weather-app-bwalker.netlify.app/",
+    liveSite: "https://weather-app-bwalker.netlify.app/",
+    github: "https://github.com/Korjubzot/weather-app",
+  },
+  {
+    title: "DLicious Recipe Database",
+    description:
+      "Full-stack recipe storage database, with user authentication provided by Firebase. Not yet live.",
+    link: "",
+    liveSite: "",
+    github: "https://github.com/Korjubzot/DLicious-Recipe-App",
+  },
+  {
+    title: "Bluesky Bot",
+    description:
+      "Node.js based bot that automatically posts images to the Bluesky social media platform via API.",
+    link: "https://github.com/Korjubzot/bluesky-bot",
+    github: "https://github.com/Korjubzot/bluesky-bot",
+  },
+];
+
 function Portfolio() {
   return (
     <div className="container">
@@ -25,26 +51,17 @@ function Portfolio() {
         <a href="https://github.com/Korjubzot/react-portfolio">here</a>.
       </Typography>
       <div className="cards-container">
-        <Cards
-          title="Weather Forecast"
-          description="React-based weather forecaster that pulls and displays data from an API."
-          link="https://weather-app-bwalker.netlify.app/"
-          liveSite="https://weather-app-bwalker.netlify.app/"
-          github="https://github.com/Korjubzot/weather-app"
-        ></Cards>
-        <Cards
-          title="DLicious Recipe Database"
-          description="Full-stack recipe storage database, with user authentication provided by Firebase. Not yet live."
-          link=""
-          liveSite=""
-          github="https://github.com/Korjubzot/DLicious-Recipe-App"
-        ></Cards>
-        <Cards
-          title="Bluesky Bot"
-          description="Node.js based bot that automatically posts images to the Bluesky social media platform via API."
-          link="https://github.com/Korjubzot/bluesky-bot"
-          github="https://github.com/Korjubzot/bluesky-bot"
-        ></Cards>
+        {cardData.map((card, index) => (
+          <Cards
+            className="card"
+            key={index}
+            title={card.title}
+            description={card.description}
+            link={card.link}
+            liveSite={card.liveSite}
+            github={card.github}
+          />
+        ))}
       </div>
     </div>
   );
