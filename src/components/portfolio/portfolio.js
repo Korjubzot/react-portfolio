@@ -17,10 +17,10 @@ const cardData = [
   {
     title: "DLicious Recipe Database",
     description:
-      "Full-stack recipe storage database, with user authentication provided by Firebase. Not yet live.",
-    link: "",
-    liveSite: "",
-    github: "https://github.com/Korjubzot/DLicious-Recipe-App",
+      "Full-stack recipe storage database, with user authentication and storage provided by Supabase.",
+    link: "https://dlicious-redux.netlify.app/",
+    liveSite: "https://dlicious-redux.netlify.app/",
+    github: "https://github.com/Korjubzot/DLicious-Redux",
   },
   {
     title: "Bluesky Bot",
