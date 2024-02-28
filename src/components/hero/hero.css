@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -55,10 +55,10 @@
 /* Media Query for smaller screens */
 @media only screen and (max-width: 768px) {
   .hero-button-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
 
-  .hero-button {
-    width: 100%;
-  }
+  /* TODO: style media query to hide image behind text.*/
+  /* TODO: generally, style the media query for mobile. */
 }

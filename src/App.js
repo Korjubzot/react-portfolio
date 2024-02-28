@@ -33,6 +33,8 @@ function App() {
             style={{ display: "flex", height: "100%", minHeight: "400px" }}
             collapsed={collapsed}
             collapsedWidth="0px"
+            // TODO fix the excessive padding?
+            // TODO rebuild the sidebar with a different library
           >
             <Menu
               icon="square"
