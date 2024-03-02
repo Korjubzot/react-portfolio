@@ -1,21 +1,16 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import HomeIcon from "@mui/icons-material/Home";
-import EmailIcon from "@mui/icons-material/Email";
-import WorkIcon from "@mui/icons-material/Work";
-import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { Menu, MenuItem } from "react-pro-sidebar";
 
 import Hero from "./components/hero/hero";
 import Contact from "./components/contact/contact";
 import Portfolio from "./components/portfolio/portfolio";
 import Blog from "./components/blog/blog";
+import Sidebar from "./components/sidebar/sidebar";
 
 import "./App.css";
-import { LinkedIn } from "@mui/icons-material";
+// import { LinkedIn } from "@mui/icons-material";
 
 function App() {
   const [isHomeHovered, setHomeHovered] = useState(false);
@@ -29,7 +24,8 @@ function App() {
     <Router>
       <div className="App">
         <div>
-          <Sidebar
+          <Sidebar />
+          {/* <Sidebar
             style={{ display: "flex", height: "100%", minHeight: "400px" }}
             collapsed={collapsed}
             collapsedWidth="0px"
@@ -153,7 +149,7 @@ function App() {
             onClick={() => setCollapsed(!collapsed)}
           >
             <MenuOutlinedIcon />
-          </button>
+          </button> */}
         </div>
 
         <Routes>
