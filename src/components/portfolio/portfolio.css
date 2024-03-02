@@ -1,21 +1,16 @@
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .cards-container {
   display: flex;
-  flex-direction: row;
-  overflow-x: auto;
-  max-height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .card {
