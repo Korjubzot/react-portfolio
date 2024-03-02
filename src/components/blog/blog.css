@@ -1,11 +1,14 @@
 .page-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin: auto;
+  height: 100vh;
 }
 
 .blog-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
