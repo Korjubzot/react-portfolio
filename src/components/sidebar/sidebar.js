@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./sidebar.css";
 
 import HomeIcon from "@mui/icons-material/Home";
@@ -24,26 +25,31 @@ const Sidebar = () => {
         <MenuOutlinedIcon />
       </button>
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
-        <div className="sidebar-item">
+        <Link to="/" className="sidebar-item">
           <HomeIcon />
-          <p>Home</p>
-        </div>
-        <div className="sidebar-item">
+          <p> Home</p>
+        </Link>
+        <Link to="/contact" className="sidebar-item">
           <EmailIcon />
-          <p>Contact</p>
-        </div>
-        <div className="sidebar-item">
+          <p> Contact</p>
+        </Link>
+        <Link to="/portfolio" className="sidebar-item">
           <WorkIcon />
-          <p>Portfolio</p>
-        </div>
-        <div className="sidebar-item">
+          <p> Portfolio</p>
+        </Link>
+        <Link to="/blog" className="sidebar-item">
           <DynamicFeedIcon />
-          <p>Blog</p>
-        </div>
-        <div className="sidebar-item">
+          <p> Blog</p>
+        </Link>
+        <a
+          href="https://www.github.com/Korjubzot"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sidebar-item"
+        >
           <GitHubIcon />
-          <p>GitHub</p>
-        </div>
+          <p> GitHub</p>
+        </a>
       </div>
     </div>
   );
