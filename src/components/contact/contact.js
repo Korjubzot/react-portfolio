@@ -6,6 +6,7 @@ import "./contact.css";
 function Contact() {
   const [contact, setContact] = useState({
     email: "",
+    name: "",
     subject: "",
     detail: "",
   });
@@ -37,11 +38,16 @@ function Contact() {
           console.log("FAILED", err);
         }
       );
-    e.target.reset();
+    setContact({
+      email: "",
+      name: "",
+      subject: "",
+      detail: "",
+    });
   }
 
   return (
-    <div>
+    <div className="contact-container">
       <form className="contact-form" onSubmit={handleSubmit}>
         <h2>Looking for me?</h2>
         <p>Leave your details and a message, and I'll right back to you</p>
@@ -51,6 +57,7 @@ function Contact() {
           name="email"
           placeholder="Email"
           onChange={handleChange}
+          aria-label="email"
         ></input>
         <input
           className="contact-name"
@@ -58,6 +65,7 @@ function Contact() {
           name="name"
           placeholder="Name"
           onChange={handleChange}
+          aria-label="name"
         ></input>
         <input
           className="contact-subject"
@@ -65,6 +73,7 @@ function Contact() {
           name="subject"
           placeholder="Subject"
           onChange={handleChange}
+          aria-label="subject"
         ></input>
         <input
           className="contact-text"
@@ -72,6 +81,7 @@ function Contact() {
           name="detail"
           placeholder="Let me know"
           onChange={handleChange}
+          aria-label="detail"
         ></input>
         <button type="submit">Submit</button>
         {isSubmitted ? (

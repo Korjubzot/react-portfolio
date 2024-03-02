@@ -1,6 +1,7 @@
 .hamburger-icon {
   font-size: 30px;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .hamburger-icon.open {
@@ -9,6 +10,7 @@
 }
 
 .sidebar {
+  z-index: 9;
   width: 100px;
   height: 100vh;
   position: fixed;
