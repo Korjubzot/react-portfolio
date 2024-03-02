@@ -34,9 +34,10 @@ const cardData = [
 function Portfolio() {
   return (
     <div className="container">
-      <Typography variant="h2" color="inherit" noWrap>
+      <Typography variant="h2" mt={4} color="inherit" noWrap>
         Portfolio
       </Typography>
+      {/* TODO slightly increase the mt value for mobile devices */}
       <Typography
         variant="h5"
         align="center"
