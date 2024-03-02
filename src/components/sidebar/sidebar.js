@@ -8,6 +8,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { LinkedIn } from "@mui/icons-material";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,6 +50,15 @@ const Sidebar = () => {
         >
           <GitHubIcon />
           <p> GitHub</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/billy-walker-ab0013278/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sidebar-item"
+        >
+          <LinkedIn />
+          <p> LinkedIn</p>
         </a>
       </div>
     </div>
