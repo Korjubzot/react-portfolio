@@ -11,6 +11,11 @@ import {
 import "./cards.css";
 import buttonStyles from "./buttonStyles";
 
+// TODO fix styling
+// this includes aligning buttons to bottom of card
+// adding hover effect to cards
+// fixing text overflow
+
 function Cards({ title, description, link, liveSite, github }) {
   return (
     <Card sx={{ width: 300, height: 300, padding: 1, margin: 2, elevation: 5 }}>

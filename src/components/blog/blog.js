@@ -11,6 +11,7 @@ function Blog() {
         <Typography variant="h5">
           My blog is still under construction.
         </Typography>
+        {/* TODO build this with Wordpress */}
       </div>
     </div>
   );

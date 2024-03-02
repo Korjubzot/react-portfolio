@@ -70,7 +70,7 @@ function Contact() {
           className="contact-text"
           type="text"
           name="detail"
-          placeholder="Let me know"
+          placeholder="What's on your mind?"
           onChange={handleChange}
         ></input>
         <button type="submit">Submit</button>
