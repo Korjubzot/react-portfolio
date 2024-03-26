@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Alert } from "@mui/material";
 import emailjs from "emailjs-com";
-import "./contact.css";
 
 function Contact() {
   const [contact, setContact] = useState({
@@ -47,12 +46,15 @@ function Contact() {
   }
 
   return (
-    <div className="contact-container">
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <h2>Looking for me?</h2>
-        <p>Leave your details and a message, and I'll right back to you</p>
+    <div className="flex flex-col justify-center items-center min-h-[80vh] w-full">
+      <form
+        className="flex flex-col justify-center items-center text-center bg-[#f2f2f2] p-[20px] rounded-[5px] m-auto w-[90%] max-w-[500px]"
+        onSubmit={handleSubmit}
+      >
+        <h2 className="text-2xl">Looking for me?</h2>
+        <p>Leave your details and a message, and I'll get right back to you</p>
         <input
-          className="contact-email"
+          className="w-full mx-[0] my-[10px] p-[10px] border-[none] rounded-[5px] box-border"
           type="email"
           name="email"
           placeholder="Email"
@@ -60,7 +62,7 @@ function Contact() {
           aria-label="email"
         ></input>
         <input
-          className="contact-name"
+          className="w-full mx-[0] my-[10px] p-[10px] border-[none] rounded-[5px] box-border"
           type="text"
           name="name"
           placeholder="Name"
@@ -68,7 +70,7 @@ function Contact() {
           aria-label="name"
         ></input>
         <input
-          className="contact-subject"
+          className="w-full mx-[0] my-[10px] p-[10px] border-[none] rounded-[5px] box-border"
           type="text"
           name="subject"
           placeholder="Subject"
@@ -76,14 +78,19 @@ function Contact() {
           aria-label="subject"
         ></input>
         <input
-          className="contact-text"
+          className="w-full mx-[0] h-[200px] my-[10px] p-[10px] border-[none] rounded-[5px] box-border"
           type="text"
           name="detail"
           placeholder="What's on your mind?"
           onChange={handleChange}
           aria-label="detail"
         ></input>
-        <button type="submit">Submit</button>
+        <button
+          className="mx-[0] my-[20px] text-[white] bg-[linear-gradient(to_bottom_right,_#ff416c,_#ff4b2b)] border-[none] rounded-[20px] px-[20px] py-[10px] text-[1.2rem] cursor-pointer [transition:transform_0.3s_ease,_box-shadow_0.3s_ease] hover:-translate-y-[2px] hover:[box-shadow:0_5px_10px_rgba(0,_0,_0,_0.2)]"
+          type="submit"
+        >
+          Submit
+        </button>
         {isSubmitted ? (
           <Alert severity="success">Contact made. Don't wait up.</Alert>
         ) : null}
