@@ -27,15 +27,6 @@
   justify-content: center;
 }
 
-.sidebar-item {
-  margin-bottom: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
