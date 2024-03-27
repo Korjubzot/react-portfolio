@@ -8,10 +8,9 @@ import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { LinkedIn } from "@mui/icons-material";
 
-// TODO: Make the sidebar collapsible
 const Sidebar = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-32 bg-gray-200">
+    <div className="flex flex-col items-center justify-center h-lvh w-32 bg-gray-200">
       <div className="space-y-4">
         <Link to="/" className="sidebar-item">
           <HomeIcon />

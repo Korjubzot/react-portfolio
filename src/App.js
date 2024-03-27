@@ -9,6 +9,8 @@ import Sidebar from "./components/sidebar/sidebar";
 
 import "./App.css";
 
+// TODO mobile styling needs to be fixed
+
 function App() {
   return (
     <Router>

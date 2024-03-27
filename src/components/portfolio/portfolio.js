@@ -1,6 +1,8 @@
 import React from "react";
 import Cards from "../cards/cards";
 
+// TODO fix an issue causing the sidebar not to extend down the length of this page
+
 const cardData = [
   {
     title: "Weather Forecast",
