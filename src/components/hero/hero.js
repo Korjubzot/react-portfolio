@@ -8,7 +8,7 @@ import imagePath from "../../img/PXL_20231109_010721339.PORTRAIT.jpg";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center p-2 bg-gray-100">
+    <div className="flex flex-col items-center p-2 bg-gray-100 w-4/5">
       <h2 className="text-4xl text-blue-700 font-bold m-2 mt-5">
         Hello Handsome
       </h2>
