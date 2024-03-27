@@ -8,10 +8,8 @@ import imagePath from "../../img/PXL_20231109_010721339.PORTRAIT.jpg";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center p-2 bg-gray-100 w-4/5">
-      <h2 className="text-4xl text-blue-700 font-bold m-2 mt-5">
-        Hello Handsome
-      </h2>
+    <div className="flex flex-col items-center justify-center p-2 pl-10 bg-inherit w-4/5">
+      <h2 className="text-4xl text-blue-700 font-bold m-2">Hello Handsome</h2>
       <h3 className="text-2xl text-blue-500 mb-4">Nice to meet you</h3>
       <div className="flex flex-col md:flex-row items-center">
         <div className="space-y-4 text-gray-700">
@@ -32,7 +30,7 @@ function Hero() {
           </p>
         </div>
         <img
-          className="w-64 h-64 object-cover rounded-full shadow-lg"
+          className="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-blue-500 ml-5"
           src={imagePath}
           alt="Billy's portrait"
         />
