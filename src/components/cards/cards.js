@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards({ title, description, link, liveSite, github }) {
+function Cards({ title, description, liveSite, github }) {
   return (
     <div className="w-72 h-72 p-4 m-4 bg-white shadow-lg rounded-md overflow-hidden">
       <div className="p-4 flex-grow">

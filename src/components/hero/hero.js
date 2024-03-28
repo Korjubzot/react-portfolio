@@ -8,7 +8,10 @@ import imagePath from "../../img/PXL_20231109_010721339.PORTRAIT.jpg";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center p-2 pl-10 bg-inherit w-4/5">
+    <div
+      data-testid="hero"
+      className="flex flex-col items-center justify-center p-2 pl-10 bg-inherit w-4/5"
+    >
       <h2 className="text-4xl text-blue-700 font-bold m-2">Hello Handsome</h2>
       <h3 className="text-2xl text-blue-500 mb-4">Nice to meet you</h3>
       <div className="flex flex-col md:flex-row items-center">
