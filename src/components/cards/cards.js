@@ -2,10 +2,15 @@ import React from "react";
 
 function Cards({ title, description, liveSite, github }) {
   return (
-    <div className="w-72 h-72 p-4 m-4 bg-white shadow-lg rounded-md overflow-hidden">
+    <div
+      role="article"
+      className="w-72 h-72 p-4 m-4 bg-white shadow-lg rounded-md overflow-hidden"
+    >
       <div className="p-4 flex-grow">
-        <h2 className="mb-4 text-lg font-semibold">{title}</h2>
-        <p className="text-sm text-gray-600">{description}</p>
+        <h3 className="mb-4 text-lg font-semibold">{title}</h3>
+        <p data-testid="card-description" className="text-sm text-gray-600">
+          {description}
+        </p>
       </div>
       <div className="flex p-4 pt-0 space-x-4">
         {liveSite && (
