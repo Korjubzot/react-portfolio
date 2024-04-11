@@ -12,24 +12,24 @@ const Sidebar = () => {
   return (
     <div
       data-testid="sidebar"
-      className="flex flex-col items-center justify-center h-lvh w-32 bg-gray-200"
+      className="flex flex-col items-center justify-center h-lvh w-16 md:w-32 bg-gray-200"
     >
       <div className="space-y-4">
         <Link to="/" className="sidebar-item">
           <HomeIcon />
-          <p> Home</p>
+          <p className="hidden md:block"> Home</p>
         </Link>
         <Link to="/contact" className="sidebar-item">
           <EmailIcon />
-          <p> Contact</p>
+          <p className="hidden md:block"> Contact</p>
         </Link>
         <Link to="/portfolio" className="sidebar-item">
           <WorkIcon />
-          <p> Portfolio</p>
+          <p className="hidden md:block"> Portfolio</p>
         </Link>
         <Link to="/blog" className="sidebar-item">
           <DynamicFeedIcon />
-          <p> Blog</p>
+          <p className="hidden md:block"> Blog</p>
         </Link>
         <a
           href="https://www.github.com/Korjubzot"
@@ -38,7 +38,7 @@ const Sidebar = () => {
           className="sidebar-item"
         >
           <GitHubIcon />
-          <p> GitHub</p>
+          <p className="hidden md:block"> GitHub</p>
         </a>
         <a
           href="https://www.linkedin.com/in/billy-walker-ab0013278/"
@@ -47,7 +47,7 @@ const Sidebar = () => {
           className="sidebar-item"
         >
           <LinkedIn />
-          <p> LinkedIn</p>
+          <p className="hidden md:block"> LinkedIn</p>
         </a>
       </div>
     </div>

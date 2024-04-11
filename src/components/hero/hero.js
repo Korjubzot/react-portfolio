@@ -17,7 +17,7 @@ function Hero() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="space-y-4 text-gray-700">
           <p className="leading-relaxed">
-            I'm Billy, a passionate software engineer who thrives on the
+            I'm Will, a passionate software engineer who thrives on the
             challenges and creativity of web development. I'm constantly
             exploring new technologies and tools, pushing the boundaries of
             what's possible in the digital realm. Every line of code is a step
