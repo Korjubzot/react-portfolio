@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 
 import imagePath from "../../img/PXL_20231109_010721339.PORTRAIT.jpg";
 
-// TODO: fix the styling on this page
-// There's something off about the layout and spacing
-
 function Hero() {
   return (
     <div
@@ -28,8 +25,8 @@ function Hero() {
             My skillset includes technologies like React, Node.js, JavaScript,
             Firebase, PostgreSQL and more. I focus on the frontend, but I'm more
             than capable of picking up backend where required. When I'm not
-            working hard, I'm training for marathons, hiking, or studying
-            Polish.
+            working hard, I'm working my Polish, hiking, or taking care of my
+            plants and flowers.
           </p>
         </div>
         <img

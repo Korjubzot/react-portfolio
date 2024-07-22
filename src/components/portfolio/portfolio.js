@@ -34,6 +34,7 @@ const cardData = [
 ];
 
 function Portfolio() {
+  // TODO fix the mobile styling on this page
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-4xl mt-16 text-center">Portfolio</h2>
@@ -50,7 +51,7 @@ function Portfolio() {
         </a>
         .
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex flex-nowrap md:grid-cols-2 lg:grid-cols-3 gap-2 overflow-x-scroll h-dvh">
         {cardData.map((card, index) => (
           <Cards
             key={index}
@@ -58,6 +59,7 @@ function Portfolio() {
             description={card.description}
             liveSite={card.liveSite}
             github={card.github}
+            className="w-64"
           />
         ))}
       </div>
