@@ -10,6 +10,7 @@ import Sidebar from "./components/sidebar/sidebar";
 import "./App.css";
 
 // TODO mobile styling needs to be fixed
+// TODO accessibility also needs to be worked on
 
 function App() {
   return (

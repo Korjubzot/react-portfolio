@@ -35,6 +35,7 @@ const cardData = [
 
 function Portfolio() {
   // TODO fix the mobile styling on this page
+  // Ideally it will still be a single page but the cards can swipe to the left and right
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-4xl mt-16 text-center">Portfolio</h2>
