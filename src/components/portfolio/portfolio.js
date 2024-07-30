@@ -34,8 +34,6 @@ const cardData = [
 ];
 
 function Portfolio() {
-  // TODO fix the mobile styling on this page
-  // Ideally it will still be a single page but the cards can swipe to the left and right
   return (
     <div className="container mx-auto px-4">
       <h2 className="text-4xl mt-16 text-center">Portfolio</h2>
@@ -52,7 +50,7 @@ function Portfolio() {
         </a>
         .
       </p>
-      <div className="flex flex-nowrap md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="flex flex-col md:flex-row md:grid-cols-2 lg:grid-cols-3 gap-2">
         {cardData.map((card, index) => (
           <Cards
             key={index}
