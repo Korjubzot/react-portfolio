@@ -52,7 +52,7 @@ function Portfolio() {
         </a>
         .
       </p>
-      <div className="flex flex-nowrap md:grid-cols-2 lg:grid-cols-3 gap-2 overflow-x-scroll h-dvh">
+      <div className="flex flex-nowrap md:grid-cols-2 lg:grid-cols-3 gap-2">
         {cardData.map((card, index) => (
           <Cards
             key={index}

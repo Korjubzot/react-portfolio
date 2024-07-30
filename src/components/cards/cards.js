@@ -1,6 +1,9 @@
 import React from "react";
 
 function Cards({ title, description, liveSite, github }) {
+  // TODO fix an issue causing the cards to drop down a full length of the page
+  // TODO merge the outer div hosting this on portfolio.js into this without breaking everything
+  // Maybe just take some time to rebuild this in general
   return (
     <div class="p-4 max-w-sm">
       <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
