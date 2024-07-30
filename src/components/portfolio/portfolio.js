@@ -38,17 +38,21 @@ function Portfolio() {
     <div className="container mx-auto px-4">
       <h2 className="text-4xl mt-16 text-center">Portfolio</h2>
       <p className="text-lg text-center my-8 mx-auto max-w-prose">
-        Dive into my web development portfolio—where code meets creativity.
-        Browse through a collection of clean, functional websites that showcase
-        my passion for building seamless online experiences. Live sites and
-        GitHub repos available. Check the repo for this portfolio{" "}
+        Take a look at some of my work - tools, bots, and websites galore. The
+        joy of programming is that I can now make some quirky, niche, or useful
+        tools, hand-tuned to what I need, and I can do the same for you. Live
+        sites and GitHub repos available. Find the repo for this portfolio{" "}
         <a
           href="https://github.com/Korjubzot/react-portfolio"
           className="text-blue-500 hover:underline"
         >
           here
         </a>
-        .
+        . Spot any bugs? Pardon the dust and{" "}
+        <a href="./contact" className="text-blue-500 hover:underline">
+          let me know
+        </a>{" "}
+        - this site is a constant work in progress.
       </p>
       <div className="flex flex-col md:flex-row md:grid-cols-2 lg:grid-cols-3 gap-2">
         {cardData.map((card, index) => (
