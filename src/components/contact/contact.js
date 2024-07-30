@@ -97,7 +97,9 @@ function Contact() {
           Submit
         </button>
         {isSubmitted ? (
-          <Alert severity="success">Contact made. Don't wait up.</Alert>
+          <Alert severity="success">
+            Always happy to hear from you. Chat soon.
+          </Alert>
         ) : null}
       </form>
     </div>

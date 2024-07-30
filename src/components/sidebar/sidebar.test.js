@@ -52,7 +52,7 @@ describe("Sidebar component", () => {
     );
     expect(screen.getByText("LinkedIn").closest("a")).toHaveAttribute(
       "href",
-      "https://www.linkedin.com/in/billy-walker-ab0013278/"
+      "https://www.linkedin.com/in/william-walker-ab0013278/"
     );
   });
 });

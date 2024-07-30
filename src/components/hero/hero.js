@@ -9,7 +9,10 @@ function Hero() {
       data-testid="hero"
       className="flex flex-col items-center justify-center p-2 pl-10 bg-inherit w-4/5"
     >
-      <h2 className="text-4xl text-blue-700 font-bold m-2">Hello Handsome</h2>
+      {/* TODO surely this can be a prettier page
+      Maybe a fun fade in? Some of the text could do that, at least. Especially h2 and h3
+      TODO update the text with something that doesn't read like AI generated slop */}
+      <h2 className="text-4xl text-blue-700 font-bold m-2">Hello handsome</h2>
       <h3 className="text-2xl text-blue-500 mb-4">Nice to meet you</h3>
       <div className="flex flex-col md:flex-row items-center">
         <div className="space-y-4 text-gray-700">

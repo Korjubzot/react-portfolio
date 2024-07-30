@@ -41,7 +41,7 @@ const Sidebar = () => {
           <p className="hidden md:block"> GitHub</p>
         </a>
         <a
-          href="https://www.linkedin.com/in/billy-walker-ab0013278/"
+          href="https://www.linkedin.com/in/william-walker-ab0013278/"
           target="_blank"
           rel="noopener noreferrer"
           className="sidebar-item"
