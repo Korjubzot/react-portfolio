@@ -5,13 +5,6 @@ import Cards from "../cards/cards";
 
 const cardData = [
   {
-    title: "Weather Forecast",
-    description:
-      "React-based weather forecaster that pulls and displays data from an API.",
-    liveSite: "https://weather-app-bwalker.netlify.app/",
-    github: "https://github.com/Korjubzot/weather-app",
-  },
-  {
     title: "DLicious Recipe Database",
     description:
       "Full-stack recipe storage database, with user authentication and storage provided by Supabase.",
@@ -27,9 +20,22 @@ const cardData = [
   {
     title: "Pomodoro Timer",
     description:
-      "A simple React-based Pomodoro timer that helps users stay focused and productive.",
+      "A React-based Pomodoro timer that helps users stay focused and productive.",
     liveSite: "https://pomodoro-tailwind.netlify.app/",
     github: "https://github.com/Korjubzot/pomodoro-timer",
+  },
+  {
+    title: "Music Streaming Service",
+    description:
+      "Home-run server and client for a music streaming webapp similar to Spotify, designed to be self-hosted. Ongoing and in early stages.",
+    github: "https://github.com/Korjubzot/music-streamer",
+  },
+  {
+    title: "Weather Forecast",
+    description:
+      "React-based weather forecaster that pulls and displays data from an API.",
+    liveSite: "https://weather-app-bwalker.netlify.app/",
+    github: "https://github.com/Korjubzot/weather-app",
   },
 ];
 

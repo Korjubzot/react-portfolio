@@ -37,6 +37,8 @@ function Hero() {
           src={imagePath}
           alt="Billy's portrait"
         />
+        {/* TODO this could look way nicer, probably squared and taking up a larger chunk of the page
+         TODO find a good book on web design principles */}
       </div>
       <div className="flex space-x-4 mt-6">
         <Link
