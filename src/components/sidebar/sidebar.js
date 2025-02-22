@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <div
       data-testid="sidebar"
-      className="flex flex-col items-center justify-center h-lvh w-16 md:w-32 bg-gray-200"
+      className="flex flex-col items-center justify-center w-16 md:w-32 bg-gray-200"
     >
       <div className="space-y-4">
         <Link to="/" className="sidebar-item">

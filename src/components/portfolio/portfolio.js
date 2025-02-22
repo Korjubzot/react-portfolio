@@ -58,7 +58,7 @@ function Portfolio() {
         </a>{" "}
         - this site is a constant work in progress.
       </p>
-      <div className="flex overflow-x-auto space-x-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="flex overflow-x-auto space-x-2 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {cardData.map((card, index) => (
           <Cards
             key={index}
