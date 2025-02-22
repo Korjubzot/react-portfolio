@@ -1,8 +1,6 @@
 import React from "react";
 import Cards from "../cards/cards";
 
-// TODO fix an issue causing the sidebar not to extend down the length of this page
-
 const cardData = [
   {
     title: "DLicious Recipe Database",
@@ -60,7 +58,7 @@ function Portfolio() {
         </a>{" "}
         - this site is a constant work in progress.
       </p>
-      <div className="flex flex-col md:flex-row md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="flex overflow-x-auto space-x-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {cardData.map((card, index) => (
           <Cards
             key={index}
@@ -68,7 +66,7 @@ function Portfolio() {
             description={card.description}
             liveSite={card.liveSite}
             github={card.github}
-            className="w-64"
+            className="w-64 flex-shrink-0"
           />
         ))}
       </div>
